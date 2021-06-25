@@ -654,6 +654,14 @@ div.Fbox
     margin-left:14%;
     margin-right:7%;
 }
+@media screen and (max-width:1600px)
+{
+    .Bgimg
+    {
+        width:37.5em;
+    }
+}
+
 /* Taille allant jusqu'a 1024px */
 @media screen and (max-width:1024px)
 {
@@ -775,7 +783,7 @@ div.Fbox
 
     div.p1
     {
-        max-width: 100%;
+        max-width: 20em;
         justify-content: flex-start;
     }
     .filter
@@ -823,7 +831,8 @@ div.Fbox
     .section-h
     {
         height: auto;
-        margin-left: initial;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .HaM
@@ -1075,8 +1084,8 @@ div.Fbox
             min-width: 324px;
     }
 }
-
-@media screen and (orientation: landscape) and (min-width: 736px) and (max-width: 1024px)
+ /* Orientation paysage pour les ecran entre 736px et 1024px */
+@media screen and (orientation: landscape) and (min-width: 640px) and (max-width: 1024px)
 {
     .section-h
     {
@@ -1088,5 +1097,15 @@ div.Fbox
     {
         margin-left: 8%;
         margin-right: 8%;
+    }
+    div.p1
+    {
+        max-width: 58%;
+    }
+    
+    article.prelative
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 }
