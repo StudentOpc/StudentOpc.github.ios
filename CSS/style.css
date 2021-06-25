@@ -500,7 +500,9 @@ div.p3
 .p4
 {
     margin-top:3%;
+    min-width: 63em;
 }
+
 article.p4
 {
     display: flex;
@@ -874,6 +876,11 @@ div.Fbox
         padding-right: 3%;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
+    }
+
+    .p4
+    {
+        min-width: auto;
     }
 
     .famous img
