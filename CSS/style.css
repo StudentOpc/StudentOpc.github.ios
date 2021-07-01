@@ -20,7 +20,8 @@ div p, a
     font-weight: bold;
 }
 
-.none-bold
+/* Enleve l'effet gras du text */
+.none-bold a, .none-bold
 {
     font-weight: normal;
 }
@@ -35,9 +36,7 @@ div.All
     display: flex;
     flex-direction: column;
     font-size: 1.1em;
-    margin-left:14%;
-    margin-right: 18%;
-    
+    margin-left:3%;
 }
 
 .nav1
@@ -149,9 +148,12 @@ article.prelative
     color:black;
 }
 
-a
+a, ul
 {
     text-decoration: none;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
 }
 
 .Ap:visited
@@ -238,7 +240,7 @@ input
 {
     background-color: #F2F2F2;
     border-radius:30px;
-    width: 62%;
+    width: 68%;
 }
 
 .bg-hebergement
@@ -390,7 +392,7 @@ img
 {
     background-image: url(../images/hebergements/4_small/Hôtel_de_la_mer.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -60px;
+    background-position: 0px -100px;
     grid-column: 2/3;
     grid-row: 3/4;
 
@@ -408,7 +410,7 @@ img
 {
     background-image: url(../images/hebergements/4_small/Hôtel_chez_Amina.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -114px;
+    background-position: 0px -214px;
     grid-column: 4/5;
     grid-row: 3/4;
 }
@@ -530,7 +532,7 @@ article.p4
 .section-h
 {
     display: flex;
-    height: 33em;
+    height: 34em;
 }
 
 .hide
@@ -590,14 +592,14 @@ background-repeat: no-repeat;
 {
  background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) ;
  background-repeat: no-repeat;
- margin-top: 20%;
+ margin-top: 4%;
 }
 
 .Activite6
 {
  background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
  background-repeat: no-repeat;
- margin-top: 15%;
+ margin-top: 4%;
 }
 
 
@@ -645,17 +647,26 @@ footer
     background-color: #F2F2F2;
     display:flex;
     margin-top: 5%;
-    margin-left: -21%;
-    margin-right: -27%;
+    margin-left: -3%;
     align-items: center;
     min-height: 15em;
 }
 
+footer a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
 div.Fbox
 {
-    margin-left:14%;
-    margin-right:7%;
+    margin-left: 2%;
+    margin-right: 15%;
 }
+
 @media screen and (max-width:1600px)
 {
     .Bgimg
@@ -723,6 +734,10 @@ div.Fbox
     .none-bold
     {
         display:flex;
+    }
+    ul
+    {
+        flex-direction: column;
     }
     .fa-info
     {
@@ -988,8 +1003,9 @@ div.Fbox
 
     div.Fbox
     {
-        margin-left: 3%;
-        margin-right: 8%;
+    margin-left: 2%;
+    margin-right: 15%;
+    margin-bottom: 8%;
     }
 
     footer
@@ -1001,7 +1017,7 @@ div.Fbox
         margin-right: 0%;
     }
 }
-
+/* Tailles d'écran entre 768px et 1024px */
 @media screen and (min-width:768px) and (max-width:1024px)
 {
     div.All
