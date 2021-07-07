@@ -673,6 +673,15 @@ div.Fbox
     {
         width:37.5em;
     }
+    .hebergement6
+    {
+        background-position: 0px -98px;
+    }
+
+    .hebergement4
+    {
+        background-position: -26px -38px;
+    }
 }
 
 /* Taille allant jusqu'a 1024px */
