@@ -692,7 +692,16 @@ span {
 @media only screen and (min-width: 2000px) {
   .All {
     width: 1440px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .All-Resto {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 3% 7%;
+    border-top-right-radius: 3% 7%;
   }
 }
 
