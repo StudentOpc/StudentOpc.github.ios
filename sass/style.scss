@@ -168,7 +168,7 @@ input{
 .ctnrestaurants--style{
     margin: 0.5rem;
 }
-.--modif{
+.modifix{
     &:hover{
             transform: scale(1.07);
             transition: $cubic;
@@ -570,18 +570,22 @@ span{
     .ctnmenus{
         margin: 0.5rem;
     }
-    .--modif{
+    .modifix{
         &:hover{
             font-size: inherit;
         }
     }
+
+}
+@media only screen and (min-width: 1440px){
+.gridchild{
+    max-width: inherit;
+}
 }
 @media only screen and (min-width: 2000px){
     .All{
     width:1440px;
     margin-left: 20%;
     }
-    .gridchild{
-        max-width: inherit;
-    }
+    
 }

@@ -246,7 +246,7 @@ input {
   margin: 0.5rem;
 }
 
-.--modif:hover {
+.modifix:hover {
   transform: scale(1.07);
   transition: cubic-bezier(0.28, 0.57, 0.32, 0.82) 1s;
   box-shadow: 2px 5px 11px #ff79d98a;
@@ -680,18 +680,19 @@ span {
     margin: 0.5rem;
   }
 
-  .--modif:hover {
+  .modifix:hover {
     font-size: inherit;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gridchild {
+    max-width: inherit;
   }
 }
 @media only screen and (min-width: 2000px) {
   .All {
     width: 1440px;
     margin-left: 20%;
-  }
-
-  .gridchild {
-    max-width: inherit;
   }
 }
 
