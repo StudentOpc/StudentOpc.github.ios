@@ -354,6 +354,10 @@ mark {
   font-family: "Shrikhand";
 }
 
+.color-change {
+  color: #fbfef9 !important;
+}
+
 /* -------- */
 /* Pour rendre les polices en mode normal */
 /* ------- */
