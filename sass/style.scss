@@ -293,22 +293,22 @@ mark {
   @include box--shadow;
   @include dish;
   @extend %flex-end;
-  transition-duration: .5s;
+  transition-duration: 1s;
   max-height: 6rem;
   &__title{
     padding: 0.8rem;
     flex:4;
+    white-space: nowrap;
     @extend %Elipse;
     &:hover{
-        white-space: nowrap;
         padding: 0.8rem;
     }
       &--style{
         margin-block-end: 0%;
+        white-space: nowrap;
         @extend %Elipse;
         &:hover{
             @extend %Elipse;
-            white-space: nowrap;
         }
       }
   }
@@ -318,27 +318,32 @@ mark {
           background-color: transparent;
           border-radius: 0rem 1rem 1rem 0rem;
           @extend %flex-center;
+          transition: 1000ms ease-in-out;
       }
   }
-
-h4:hover{
+h4{
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.ctnmenus__checked--style{
+    color:white;
+    transition-duration: 1s;
+    transform: rotate(0deg);
 }
 .ctnmenus:hover
 {
     .ctnmenus__checked{
-    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    flex: 1;
+    // animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    flex: 1.3;
     
     padding-bottom: 0.1rem;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.8s;
     background-color: $tertiary-color;
     }
 
     .ctnmenus__checked--style{
         color:white;
-        transition-duration: 0.9s;
+        transition-duration: 1s;
         transform: rotate(1080deg);
     }
 }
@@ -346,39 +351,6 @@ h4:hover{
     color: transparent;
     transform: rotate(1deg);
 }
-
-@keyframes scale-in-hor-right {
-    from {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    to {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes scale-in-hor-right {
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-  }
 span{
     padding:0.8rem;
     font-weight: bold;
@@ -543,8 +515,9 @@ span{
         grid-template-rows: 77%;
     }
     .gridchild{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
+        display: flex;
+        flex-direction: column;
+        max-width: 21rem;
     }
     .image{
         height: 45rem;
@@ -593,5 +566,22 @@ span{
     .lds-hourglass{
         right:41%;
         top:25%;
+    }
+    .ctnmenus{
+        margin: 0.5rem;
+    }
+    .--modif{
+        &:hover{
+            font-size: inherit;
+        }
+    }
+}
+@media only screen and (min-width: 2000px){
+    .All{
+    width:1440px;
+    margin-left: 20%;
+    }
+    .gridchild{
+        max-width: inherit;
     }
 }
